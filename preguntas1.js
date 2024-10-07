@@ -1,7 +1,7 @@
 // preguntas.js
 var preguntas = preguntas || {};
 
-preguntas['test'] = [
+preguntas['test1'] = [
         {
             pregunta: "1. ¿Cuál es el límite máximo de velocidad permitido en zonas urbanas en Uruguay, salvo señalización en contrario?",
             opciones: [
