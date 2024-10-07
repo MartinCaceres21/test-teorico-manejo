@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Teórico</title>
+    <!-- Enlazamos el archivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de Inicio -->
+    <div id="inicio">
+        <h1>Test Teórico</h1>
+        <p>Creamos este simulacro para que puedan evaluar sus conocimientos y llegar al examen teórico con mayor tranquilidad.</p>
+        <p>Pueden consultar el manual dando click <a href="#">aquí</a>.</p>
+        <p class="important">LAS PREGUNTAS SON A MODO DE EJEMPLO Y NO NECESARIAMENTE REPRESENTAN EL LISTADO DEL EXAMEN REAL.</p>
+        <p>Si sus resultados no son óptimos: ¡No se desanimen!</p>
+        <ul>
+            <li>30 preguntas</li>
+            <li>30 minutos</li>
+            <li>Todo lo necesario para aprobar</li>
+        </ul>
+        <button class="button" onclick="mostrarSeleccionTest()">¡Estoy listo!</button>
+    </div>
+
+    <!-- Selección de Test -->
+    <div id="seleccionTest" style="display: none;">
+        <h2>Selecciona un Test Teórico</h2>
+        <div>
+            <button class="test-button" onclick="iniciarTest('test1')">Test Teórico 1 - Preguntas Generales 1</button>
+            <button class="test-button" onclick="iniciarTest('test6')">Test Teórico 6 - Preguntas Generales 2</button>
+            <button class="test-button" onclick="iniciarTest('test2')">Test Teórico 2 - Cruces y Preferencias</button>
+            <button class="test-button" onclick="iniciarTest('test3')">Test Teórico 3 - Señales de Tránsito y su Interpretación</button>
+            <button class="test-button" onclick="iniciarTest('test4')">Test Teórico 4 - Normas de Seguridad Vial y Buenas Prácticas</button>
+            <button class="test-button" onclick="iniciarTest('test5')">Test Teórico 5 - Alcohol, Drogas y Conducción</button>
+
+            <!-- Puedes agregar más botones para otros tests -->
+        </div>
+    </div>
+
+    <!-- Sección de Preguntas -->
+    <div id="cuestionario" style="display: none;">
+        <div class="timer" id="temporizador"></div>
+        <div class="question-container">
+            <div class="question-number" id="numeroPregunta"></div>
+            <div class="question-text" id="textoPregunta"></div>
+            <form id="quiz-form">
+                <div class="options" id="opciones"></div>
+                <button type="button" class="next-button" onclick="siguientePregunta()">Siguiente</button>
+            </form>
+        </div>
+        <div class="progress" id="progreso"></div>
+    </div>
+
+    <!-- Sección de Resultados -->
+    <div id="resultados" style="display: none;">
+        <h2>Resultados del Test</h2>
+        <p id="textoResultados"></p>
+        <button class="button" onclick="reiniciar()">Volver al Inicio</button>
+    </div>
+
+    <!-- Enlazamos los scripts en el orden correcto -->
+    <script src="preguntas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
