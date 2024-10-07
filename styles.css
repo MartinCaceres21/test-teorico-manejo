@@ -1,102 +1,197 @@
-/* Estilos CSS */
+/* Estilo actualizado para centrar todos los elementos */
 
+/* Fuente base */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #e0f7fa; /* Fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h1, h2 {
+/* Contenedor principal para centrar el contenido */
+#inicio {
     text-align: center;
-}
-
-.button, .test-button, .next-button {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.next-button {
-    background-color: #e67e22;
-}
-
-.button:hover, .test-button:hover, .next-button:hover {
-    opacity: 0.8;
-}
-
-.question-container {
     max-width: 800px;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de elevación */
 }
 
-.options label {
-    display: block;
-    margin: 10px 0;
-}
-
-.progress, .timer {
-    text-align: right;
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.important {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-a {
-    color: #2980b9;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#resultados h2 {
+/* Títulos */
+h1, h2 {
+    color: #00796b; /* Verde oscuro */
     margin-bottom: 20px;
 }
 
-#textoResultados {
-    font-size: 20px;
+/* Botones */
+.button, .test-button, .next-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.button:hover, .test-button:hover, .next-button:hover {
+    background-color: #004d40; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Sección de enlaces */
+.links-section {
+    margin-top: 20px;
+}
+
+.links-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-section ul li {
+    margin: 8px 0;
+}
+
+.links-section ul li a {
+    color: #0288d1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links-section ul li a:hover {
+    text-decoration: underline;
+    color: #004d40; /* Cambiar a verde oscuro en hover */
+}
+
+/* Mensaje importante */
+.important {
+    color: #d32f2f; /* Rojo fuerte */
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #555;
+}
+
+#seleccionTest {
     text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los botones de test */
+.test-button {
+    display: inline-block;
+    margin: 10px 5px; /* Espaciado más pequeño para que los botones estén más juntos */
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.test-button:hover {
+    background-color: #004d40; /* Verde más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
+}
+
+#cuestionario {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+}
+
+/* Estilo para la pregunta y opciones */
+.question-container {
+    text-align: left; /* Mantener el texto de la pregunta alineado a la izquierda para legibilidad */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Botón siguiente */
+.next-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.next-button:hover {
+    background-color: #004d40; /* Verde más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
+}
+
+/* Estilo para el temporizador y el progreso */
+.timer, .progress {
+    text-align: center; /* Centrar el temporizador y el progreso */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #00796b;
+}
+
+.options {
+    text-align: left; /* Alinea las opciones a la izquierda */
+    margin: auto;
+    padding: 10px 0;
+}
+
+/* Mantener los labels de las opciones con un margen claro */
+.options label {
+    display: block; /* Cada opción en una nueva línea */
+    margin: 8px 0;
 }
 
 .explicacion-correcta {
     margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    background-color: #d4edda;
-    color: #155724;
+    padding: 15px;
+    border: 2px solid #28a745; /* Verde para respuesta correcta */
+    border-radius: 8px;
+    background-color: #d4edda; /* Fondo verde claro */
+    color: #155724; /* Texto verde oscuro */
+    text-align: left;
 }
 
+/* Estilo para la explicación cuando la respuesta es incorrecta */
 .explicacion-incorrecta {
     margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    background-color: #f8d7da;
-    color: #721c24;
+    padding: 15px;
+    border: 2px solid #dc3545; /* Rojo para respuesta incorrecta */
+    border-radius: 8px;
+    background-color: #f8d7da; /* Fondo rojo claro */
+    color: #721c24; /* Texto rojo oscuro */
+    text-align: left;
 }

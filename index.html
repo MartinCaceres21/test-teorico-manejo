@@ -8,32 +8,47 @@
 </head>
 <body>
     <!-- Página de Inicio -->
-    <div id="inicio">
-        <h1>Test Teórico</h1>
-        <p>Creamos este simulacro para que puedan evaluar sus conocimientos y llegar al examen teórico con mayor tranquilidad.</p>
-        <p>Pueden consultar el manual dando click <a href="#">aquí</a>.</p>
-        <p class="important">LAS PREGUNTAS SON A MODO DE EJEMPLO Y NO NECESARIAMENTE REPRESENTAN EL LISTADO DEL EXAMEN REAL.</p>
-        <p>Si sus resultados no son óptimos: ¡No se desanimen!</p>
+<!-- Página de Inicio -->
+<div id="inicio">
+    <h1>Test Teórico</h1>
+    <p>Creamos este simulacro para que puedan evaluar sus conocimientos y llegar al examen teórico con mayor tranquilidad.</p>
+    <p class="important">LAS PREGUNTAS SON A MODO DE EJEMPLO Y NO NECESARIAMENTE REPRESENTAN EL LISTADO DEL EXAMEN REAL.</p>
+    <p>Si sus resultados no son óptimos: ¡No se desanimen!</p>
+
+    <!-- Sección de enlaces adicionales -->
+    <div class="links-section">
+        <h2>Documentos y Leyes Importantes</h2>
         <ul>
-            <li>30 preguntas</li>
-            <li>30 minutos</li>
-            <li>Todo lo necesario para aprobar</li>
+            <li><a href="https://montevideo.gub.uy/sites/default/files/Reglamento%20Nacional%20de%20Circulacion%20Vial.pdf#:~:text=Resultando:%20I)%20Que%20por%20dicho%20decreto" target="_blank">REGLAMENTO NACIONAL DE CIRCULACIÓN VIAL</a></li>
+            <li><a href="https://montevideo.gub.uy/sites/default/files/biblioteca/guiaautosymotos.pdf" target="_blank">GUÍA NACIONAL DE CONDUCCIÓN</a></li>
+            <li><a href="https://www.impo.com.uy/bases/decretos-reglamento/118-1984" target="_blank">Decreto N° 118/1984</a></li>
+            <li><a href="https://www.impo.com.uy/bases/leyes/18113-2007" target="_blank">Ley N° 18113</a></li>
+            <li><a href="https://www.impo.com.uy/bases/leyes/18191-2007" target="_blank">Ley N° 18191</a></li>
+            <li><a href="https://www.impo.com.uy/bases/leyes/19061-2013" target="_blank">Ley N° 19061</a></li>
         </ul>
-        <button class="button" onclick="mostrarSeleccionTest()">¡Estoy listo!</button>
     </div>
+
+    <ul>
+        <li><strong>30 o 20 preguntas</strong></li>
+        <li><strong>30 minutos</strong></li>
+        <li><strong>Todo lo necesario para aprobar</strong></li>
+    </ul>
+    <button class="button" onclick="mostrarSeleccionTest()">¡Estoy listo!</button>
+</div>
+
 
     <!-- Selección de Test -->
     <div id="seleccionTest" style="display: none;">
         <h2>Selecciona un Test Teórico</h2>
         <div>
             <button class="test-button" onclick="iniciarTest('test1')">Test Teórico 1 - Preguntas Generales 1</button>
-            <button class="test-button" onclick="iniciarTest('test6')">Test Teórico 6 - Preguntas Generales 2</button>
-            <button class="test-button" onclick="iniciarTest('test2')">Test Teórico 2 - Cruces y Preferencias</button>
-            <button class="test-button" onclick="iniciarTest('test3')">Test Teórico 3 - Señales de Tránsito y su Interpretación</button>
-            <button class="test-button" onclick="iniciarTest('test4')">Test Teórico 4 - Normas de Seguridad Vial y Buenas Prácticas</button>
-            <button class="test-button" onclick="iniciarTest('test5')">Test Teórico 5 - Alcohol, Drogas y Conducción</button>
+            <button class="test-button" onclick="iniciarTest('test2')">Test Teórico 2 - Preguntas Generales 2</button>
+            <button class="test-button" onclick="iniciarTest('test3')">Test Teórico 3 - Cruces y Preferencias</button>
+            <button class="test-button" onclick="iniciarTest('test4')">Test Teórico 4 - Señales de Tránsito y su Interpretación</button>
+            <button class="test-button" onclick="iniciarTest('test5')">Test Teórico 5 - Normas de Seguridad Vial y Buenas Prácticas</button>
+            <button class="test-button" onclick="iniciarTest('test6')">Test Teórico 6 - Alcohol, Drogas y Conducción</button>
+            <button class="test-button" onclick="iniciarTest('testDificil')">Test Avanzado - Preguntas Difíciles</button>
 
-            <!-- Puedes agregar más botones para otros tests -->
         </div>
     </div>
 
@@ -60,6 +75,13 @@
 
     <!-- Enlazamos los scripts en el orden correcto -->
     <script src="preguntas.js"></script>
+    <script src="preguntas2.js"></script>
+    <script src="preguntas3.js"></script>
+    <script src="preguntas4.js"></script>
+    <script src="preguntas5.js"></script>
+    <script src="preguntas6.js"></script>
+    <script src="preguntasDificiles.js"></script>
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </body>
 </html>
