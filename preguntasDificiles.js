@@ -10,7 +10,7 @@ preguntas['testDificil'] = [
                 "C) Triángulos reflectantes",
                 "D) Chaleco reflectante"
             ],
-            respuestasCorrectas: [0, 2, 3],
+            respuestasCorrectas: [0, 2, 3, 4],
             explicacion: "Según el **Artículo 60 del Decreto N° 81/014 que reglamenta la Ley 19.061**, es obligatorio llevar en el vehículo un maletín de primeros auxilios, un extintor de incendios, triángulos reflectantes y un chaleco reflectante para garantizar la seguridad vial."
         },
         {
